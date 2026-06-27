@@ -1,0 +1,40 @@
+# presentation
+
+## 第一候補
+
+- Gamma
+- Claude
+- ChatGPT
+- Canva AI
+- NotebookLM
+
+## 低コスト補助
+
+- Tome
+- Beautiful.ai
+- Napkin AI
+- Whimsical AI
+
+## ローカル検証
+
+- Ollama でアウトライン案を大量生成
+- ローカルRAGで過去資料から構成を抽出
+
+## 判断ルール
+
+- 提案骨子 / 章立て: Claude / ChatGPT を優先する。
+- 手元資料から要点抽出: NotebookLM を検証する。
+- 初稿スライド: Gamma / Canva AI を使う。
+- 図解: Napkin AI / Whimsical AI / Miro AI を候補にする。
+- 最終版: 人間がトーン、数字、固有名詞、ストーリーを整える。
+
+## 破綻条件
+
+- 見た目が整っているだけで内容を採用する。
+- 数字、事例、引用元を確認しない。
+- 顧客固有情報を規約未確認のサービスへ投入する。
+- 1つの資料生成AIだけで営業資料を完結させる。
+
+## 関連評価ログ
+
+- `catalog/evaluations/2026-06-initial-evaluation-plan.md`

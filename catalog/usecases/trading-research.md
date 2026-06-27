@@ -1,0 +1,40 @@
+# trading-research
+
+## 第一候補
+
+- Perplexity
+- NotebookLM
+- Tavily API
+- Exa.ai
+- Claude / ChatGPT
+
+## 低コスト補助
+
+- You.com
+- Kagi Assistant
+- 通常検索 + AI要約
+
+## ローカル検証
+
+- ローカルRAGでニュース履歴・メモを検索
+- Ollama で材料分類を検証
+
+## 判断ルール
+
+- 最新ニュースの入口: Perplexity など検索AIで出典を集める。
+- 手元メモ / レポート / PDF: NotebookLM で整理する。
+- ニュース監視 API: Tavily / Exa / Firecrawl を候補にする。
+- 材料整理: Claude / ChatGPT で「何が価格に効くか」を構造化する。
+- 最終判断: 一次ソース、価格、時刻、発表主体を必ず確認する。
+
+## 破綻条件
+
+- AI要約だけで売買判断する。
+- 出典時刻を確認しない。
+- 古いニュースと新しいニュースを混ぜる。
+- SNS・噂・二次情報を一次情報として扱う。
+- 投資助言として扱える表現を検証なしに残す。
+
+## 関連評価ログ
+
+- `catalog/evaluations/2026-06-initial-evaluation-plan.md`

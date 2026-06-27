@@ -36,3 +36,29 @@
 | [07_test_strategy.md](./07_test_strategy.md) | テスト方針と品質ゲート |
 | [08_release_runbook.md](./08_release_runbook.md) | リリース・マイグレーション・復旧 |
 | [tasks/README.md](./tasks/README.md) | 日次運用の実行ハブ、作業計画、実装タスク |
+
+## カタログ入口
+
+| パス | 役割 |
+|---|---|
+| [`../catalog/services/`](../catalog/services/) | サービス / 技術ごとの台帳 |
+| [`../catalog/usecases/`](../catalog/usecases/) | 用途別の逆引き |
+| [`../catalog/evaluations/`](../catalog/evaluations/) | 実タスクの評価ログ |
+| [`../catalog/candidates/`](../catalog/candidates/) | 未検証候補の棚 |
+| [`../catalog/routing-rules.md`](../catalog/routing-rules.md) | 使い分け判断の正本 |
+
+## ハーネス（AI 制御）
+
+AI エージェント制御の全体像は `.claude/README.md`。アーキ本体とその repo 固有 instantiation は `docs/specs/`。
+
+| ドキュメント | 役割 |
+|---|---|
+| [specs/kurosawa-thin-harness-architecture.md](./specs/kurosawa-thin-harness-architecture.md) | Thin Harness アーキ本体（tool-agnostic マスター） |
+| [specs/runtime-protocol.md](./specs/runtime-protocol.md) | 実行手順と停止条件（repo 固有） |
+| [specs/capability-boundary.md](./specs/capability-boundary.md) | 保護 capability と permissions 写像（脅威モデル） |
+| [specs/change-boundary.md](./specs/change-boundary.md) | 保護パスと変更境界 |
+| [specs/evidence-policy.md](./specs/evidence-policy.md) | Evidence Level と done の下限 |
+| [specs/judgment-memory.md](./specs/judgment-memory.md) | 判断記憶のパイプライン |
+| [templates/](./templates/) | 各 Layer のテンプレ |
+| [decisions/decision-log.md](./decisions/decision-log.md) | 判断日誌（trade journal） |
+| [memory/](./memory/) | 蒸留済み判断記憶 |

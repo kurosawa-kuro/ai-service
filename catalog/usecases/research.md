@@ -1,0 +1,45 @@
+# research
+
+## 第一候補
+
+- Perplexity
+- NotebookLM
+- Tavily API
+- Exa.ai
+- Firecrawl
+
+## 低コスト補助
+
+- You.com
+- Phind
+- Kagi Assistant
+- 通常の検索エンジン + ChatGPT / Claude で整理
+
+## ローカル検証
+
+- ローカルRAG
+- Ollama + 埋め込みモデル
+- Chroma / Qdrant / pgvector
+
+## 判断ルール
+
+- 最新ニュース / サービス仕様: Perplexity など検索AIで入口を作る。
+- 手元資料 / PDF / 講座素材: NotebookLM を優先して検証する。
+- エージェントに検索を組み込む: Tavily / Exa / Firecrawl を API 候補として検証する。
+- 意味検索 / 類似ページ探索: Exa を検証する。
+- 検索APIとしての使いやすさ: Tavily を検証する。
+- Webページ抽出 / クロール: Firecrawl を検証する。
+- 技術調査: Phind / Perplexity / 公式ドキュメントの順で確認する。
+- 最終判断: 一次情報、公式 docs、規約、料金ページへ戻る。
+
+## 破綻条件
+
+- 出典つき回答を、そのまま正解扱いする。
+- 最新情報をモデルの記憶だけに頼る。
+- API / 料金 / 規約が変わりやすいサービスを未確認のまま台帳へ確定記入する。
+- トレードや契約判断を、検索AIの要約だけで決める。
+
+## 関連評価ログ
+
+- `catalog/evaluations/2026-06-initial-evaluation-plan.md`
+- `catalog/evaluations/2026-06-research-stack-comparison-plan.md`

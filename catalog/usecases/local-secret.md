@@ -1,0 +1,42 @@
+# local-secret
+
+## 第一候補
+
+- Ollama
+- LM Studio
+- LocalAI
+- Open WebUI
+
+## 低コスト補助
+
+- 小型OSSモデル
+- 低価格APIモデル。ただし機密性が低い素材に限定する
+
+## ローカル検証
+
+- Ollama + Qwen系
+- Ollama + DeepSeek系
+- MLX / MLX-LM
+- llama.cpp
+- vLLM
+
+## 判断ルール
+
+- 個人情報、顧客情報、未公開資料: 原則ローカル or 契約上許可された環境。
+- 大量テキストの下処理: ローカルで品質・速度・コストを測る。
+- 高精度な最終判断: ローカルで前処理し、必要なら外部サービスへ匿名化・要約して渡す。
+- ローカルRAG: Qdrant / Chroma / pgvector と組み合わせて検証する。
+- CLI / 自動化重視: Ollama を優先して検証する。
+- GUI / 講座デモ重視: LM Studio を優先して検証する。
+
+## 破綻条件
+
+- 秘密情報を、規約未確認の外部サービスへ投入する。
+- ローカルモデルの低品質出力をレビューなしで採用する。
+- ローカルで遅すぎる処理を無理に回し続ける。
+- モデル名だけで安全と判断する。
+
+## 関連評価ログ
+
+- `catalog/evaluations/2026-06-initial-evaluation-plan.md`
+- `catalog/evaluations/2026-06-local-llm-comparison-plan.md`
