@@ -13,7 +13,7 @@
 | `evaluations/` | 実タスクの評価ログ。印象ではなく再利用判断の根拠を残す |
 | `candidates/` | 未検証候補。採用済み・契約対象・推奨ではない |
 | `routing-rules.md` | 使い分け判断の正本 |
-| `education-links.md` | `study-ai-tool` への教材化ルールと対応表 |
+| `education-links.md` | `ai-tool` への教材化ルールと対応表 |
 
 ## 運用ルール
 
@@ -22,7 +22,7 @@
 - 用途で迷ったら `usecases/` を見る。
 - 使い分けが固まったら `routing-rules.md` に反映する。
 - 料金、利用規約、API、CLI、MCP、ローカル可否は変わるため、サービス台帳へ昇格する時点で確認する。
-- 教材・比較記事として外に出す内容は `/Users/kurosawa/Dev/study-ai-tool` へ置く。ここには判断根拠と評価ログを残す。
+- 教材・比較記事として外に出す内容は `/Users/kurosawa/Dev/ai-tool` へ置く。ここには判断根拠と評価ログを残す。
 
 ## 初期優先領域
 
