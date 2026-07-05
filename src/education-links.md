@@ -28,11 +28,11 @@ ai-tool
 
 | ai-service 側 | 教材化できる内容 |
 |---|---|
-| `catalog/services/*.md` | サービスごとの特徴、強み、弱み、黒澤用途 |
-| `catalog/usecases/*.md` | 業務別・用途別の使い分け |
-| `catalog/evaluations/*.md` | 実タスクでの比較結果、成功例、失敗例 |
-| `catalog/routing-rules.md` | 最終的な使い分けルール |
-| `catalog/candidates/*.md` | 今後紹介する候補、未検証の話題 |
+| `src/services/*.md` | サービスごとの特徴、強み、弱み、黒澤用途 |
+| `src/usecases/*.md` | 業務別・用途別の使い分け |
+| `src/evaluations/*.md` | 実タスクでの比較結果、成功例、失敗例 |
+| `src/routing-rules.md` | 最終的な使い分けルール |
+| `src/candidates/*.md` | 今後紹介する候補、未検証の話題 |
 
 ## 昇格 / 逆流ルール
 
@@ -45,22 +45,22 @@ ai-tool
 
 ### ai-tool から ai-service へ
 
-- 教材作成中に出た新しいツール候補は `catalog/candidates/` へ戻す。
-- 実運用で使う可能性が出たら `catalog/services/` へ台帳化する。
+- 教材作成中に出た新しいツール候補は `src/candidates/` へ戻す。
+- 実運用で使う可能性が出たら `src/services/` へ台帳化する。
 - 教材上のランキングや推奨は、そのまま `routing-rules.md` へ入れない。評価ログを経由する。
 
 ## 現在の対応
 
 | ai-tool | ai-service |
 |---|---|
-| `claude-code/README.md` | `catalog/services/claude-code.md` |
-| `codex/README.md` | `catalog/services/codex-cli.md` |
-| `cursor/README.md` | `catalog/services/cursor.md` |
-| `github-copilot/README.md` | `catalog/services/github-copilot.md` |
-| `deep-seek/README.md` | `catalog/candidates/category-shelves.md` |
-| `devin/README.md` | `catalog/candidates/category-shelves.md` |
+| `claude-code/README.md` | `src/services/claude-code.md` |
+| `codex/README.md` | `src/services/codex-cli.md` |
+| `cursor/README.md` | `src/services/cursor.md` |
+| `github-copilot/README.md` | `src/services/github-copilot.md` |
+| `deep-seek/README.md` | `src/candidates/category-shelves.md` |
+| `devin/README.md` | `src/candidates/category-shelves.md` |
 
 ## 次にやること
 
-- `ai-tool` の各ツール別 README へ、対応する `ai-service/catalog/services/*.md` への参照を追加する。
-- `ai-service/catalog/evaluations/` に実評価ログが増えたら、教材化候補をこのファイルへ追記する。
+- `ai-tool` の各ツール別 README へ、対応する `ai-service/src/services/*.md` への参照を追加する。
+- `ai-service/src/evaluations/` に実評価ログが増えたら、教材化候補をこのファイルへ追記する。

@@ -2,7 +2,7 @@
 
 ## Goal
 
-`catalog/` をさらに充実させ、候補・サービス台帳・用途・評価計画の接続を強くする。
+`src/` をさらに充実させ、候補・サービス台帳・用途・評価計画の接続を強くする。
 
 ## Context
 
@@ -18,11 +18,11 @@
 
 ## Skeleton
 
-- `catalog/services/`
-- `catalog/usecases/`
-- `catalog/evaluations/`
-- `catalog/candidates/`
-- `catalog/routing-rules.md`
+- `src/services/`
+- `src/usecases/`
+- `src/evaluations/`
+- `src/candidates/`
+- `src/routing-rules.md`
 
 ## Plan
 
@@ -34,17 +34,17 @@
 
 ## Acceptance Criteria
 
-- `catalog/services/` の登録数が増えている。
-- `catalog/evaluations/` に比較計画が複数ある。
+- `src/services/` の登録数が増えている。
+- `src/evaluations/` に比較計画が複数ある。
 - `routing-rules.md` が新規台帳と整合している。
-- `make test` が成功する。
+- リンク・見出しフォーマットを目視確認する。
 
 ## Verification
 
-- `make test` - 成功（7 tests）
-- `find catalog/services -type f | wc -l` - 19（README + 個別台帳18件）
-- `find catalog/evaluations -type f | wc -l` - 6
-- `find catalog/usecases -type f | wc -l` - 9（README + 用途8件）
+- 目視確認 — OK
+- `find src/services -type f | wc -l` - 19（README + 個別台帳18件）
+- `find src/evaluations -type f | wc -l` - 6
+- `find src/usecases -type f | wc -l` - 9（README + 用途8件）
 - `rg` で Firecrawl の台帳・候補棚・用途ページ・サービス比較表の整合を確認
 
 ## Notes

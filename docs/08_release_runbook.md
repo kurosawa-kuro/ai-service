@@ -2,10 +2,7 @@
 
 ## リリース前
 
-```bash
-make test
-git status --short
-```
+Markdown 台帳に「リリース」工程はない。`git status --short` で未コミットを確認する程度。
 
 - `docs/tasks/active/` にリリース前の未完了 blocker が残っていないことを確認する。
 - リリース対象 task の `Verification` に検証結果が残っていることを確認する。

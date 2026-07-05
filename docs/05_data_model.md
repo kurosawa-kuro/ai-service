@@ -13,7 +13,7 @@
 Phase 1 では Markdown + Git を永続化方式とする。
 
 ```text
-catalog/
+src/
   ├── services/
   ├── usecases/
   ├── evaluations/
@@ -27,7 +27,7 @@ DB 化は構造が固まってから検討する。
 
 ### サービス台帳
 
-担当パス: `catalog/services/*.md`
+担当パス: `src/services/*.md`
 
 | 項目 | 方針 |
 |---|---|
@@ -47,7 +47,7 @@ DB 化は構造が固まってから検討する。
 
 ### 用途逆引き
 
-担当パス: `catalog/usecases/*.md`
+担当パス: `src/usecases/*.md`
 
 | セクション | 内容 |
 |---|---|
@@ -56,11 +56,11 @@ DB 化は構造が固まってから検討する。
 | ローカル検証 | 機密、低コスト、大量処理、検証向け |
 | 判断ルール | どういう条件でどれを選ぶか |
 | 破綻条件 | その用途で避けるべき使い方 |
-| 関連評価ログ | 根拠となる `catalog/evaluations/` への参照 |
+| 関連評価ログ | 根拠となる `src/evaluations/` への参照 |
 
 ### 評価ログ
 
-担当パス: `catalog/evaluations/YYYY-MM-<topic>.md`
+担当パス: `src/evaluations/YYYY-MM-<topic>.md`
 
 | 項目 | 内容 |
 |---|---|
@@ -74,7 +74,7 @@ DB 化は構造が固まってから検討する。
 
 ### 候補棚
 
-担当パス: `catalog/candidates/*.md`
+担当パス: `src/candidates/*.md`
 
 未検証の AI サービス / 技術を置く。ここにあるだけでは採用済み、契約対象、推奨対象を意味しない。
 サービス台帳へ昇格する前に、最新情報、利用規約、料金、API / CLI / MCP、ローカル可否を確認する。

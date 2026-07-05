@@ -1,64 +1,27 @@
-# プロジェクトドキュメント索引
+# ドキュメント索引
 
-このディレクトリは、プロジェクトの要件・設計・ワークフロー・テスト・リリース運用の正本。`AGENTS.md` は Codex / 他エージェント向けの repo ガイド、`CLAUDE.md` は Claude Code の司令塔、`docs/tasks/` は毎日の作業計画・実装タスク・調査ログの実行ハブ、`.claude/skills/` は Claude Code で繰り返し使う作業手順。
+補助ドキュメントの索引。プロジェクトの**実ソース（カタログ本体）は `src/`**。エージェント向けガイドは `CLAUDE.md` / `AGENTS.md`、`docs/tasks/` は軽い作業メモ。
 
-## 権威順位
-
-```text
-コード / Makefile / config / manifests
-> docs
-> docs/tasks
-> README / CLAUDE / AGENTS
-> archive
-```
-
-## 毎日使う入口
-
-| 入口 | 用途 |
-|---|---|
-| [tasks/README.md](./tasks/README.md) | 今日やること、次にやること、完了したことを管理する |
-| [tasks/active/refactoring-candidates.md](./tasks/active/refactoring-candidates.md) | 常時見る cleanup / refactoring 候補 |
-| [04_workflows.md](./04_workflows.md) | 作業開始、検証、リリース前確認のコマンド |
-| [07_test_strategy.md](./07_test_strategy.md) | タスク完了前に通す品質ゲート |
-
-`docs/tasks/` は仕様の正本ではないが、日々の実行順・証跡・未決事項の正本として扱う。確定した仕様は `docs/specs/` や 01〜08 文書へ、判断理由は `docs/adr/` へ昇格する。
-
-## ドキュメント一覧
-
-| ドキュメント | 役割 |
-|---|---|
-| [01_requirements.md](./01_requirements.md) | 目的・範囲・ユーザー・ユースケース |
-| [02_architecture.md](./02_architecture.md) | 構成要素・境界・実行モデル |
-| [03_domain_model.md](./03_domain_model.md) | 用語・状態・ビジネス概念 |
-| [04_workflows.md](./04_workflows.md) | ローカルコマンドと運用フロー |
-| [05_data_model.md](./05_data_model.md) | データ・スキーマ・設定・永続化 |
-| [06_error_policy.md](./06_error_policy.md) | エラー処理・リトライ・ログ |
-| [07_test_strategy.md](./07_test_strategy.md) | テスト方針と品質ゲート |
-| [08_release_runbook.md](./08_release_runbook.md) | リリース・マイグレーション・復旧 |
-| [tasks/README.md](./tasks/README.md) | 日次運用の実行ハブ、作業計画、実装タスク |
-
-## カタログ入口
+## カタログ入口（実ソース）
 
 | パス | 役割 |
 |---|---|
-| [`../catalog/services/`](../catalog/services/) | サービス / 技術ごとの台帳 |
-| [`../catalog/usecases/`](../catalog/usecases/) | 用途別の逆引き |
-| [`../catalog/evaluations/`](../catalog/evaluations/) | 実タスクの評価ログ |
-| [`../catalog/candidates/`](../catalog/candidates/) | 未検証候補の棚 |
-| [`../catalog/routing-rules.md`](../catalog/routing-rules.md) | 使い分け判断の正本 |
+| [`../src/services/`](../src/services/) | サービス / 技術ごとの台帳 |
+| [`../src/usecases/`](../src/usecases/) | 用途別の逆引き |
+| [`../src/evaluations/`](../src/evaluations/) | 実タスクの評価ログ |
+| [`../src/candidates/`](../src/candidates/) | 未検証候補の棚 |
+| [`../src/routing-rules.md`](../src/routing-rules.md) | 使い分け判断の正本 |
+| [`../src/現在の契約.md`](../src/現在の契約.md) | 今の契約 ／ [`../src/services/coding-plans.md`](../src/services/coding-plans.md) プラン比較 |
 
-## ハーネス（AI 制御）
-
-AI エージェント制御の全体像は `.claude/README.md`。アーキ本体とその repo 固有 instantiation は `docs/specs/`。
+## 補助ドキュメント（軽い参照）
 
 | ドキュメント | 役割 |
 |---|---|
-| [specs/kurosawa-thin-harness-architecture.md](./specs/kurosawa-thin-harness-architecture.md) | Thin Harness アーキ本体（tool-agnostic マスター） |
-| [specs/runtime-protocol.md](./specs/runtime-protocol.md) | 実行手順と停止条件（repo 固有） |
-| [specs/capability-boundary.md](./specs/capability-boundary.md) | 保護 capability と permissions 写像（脅威モデル） |
-| [specs/change-boundary.md](./specs/change-boundary.md) | 保護パスと変更境界 |
-| [specs/evidence-policy.md](./specs/evidence-policy.md) | Evidence Level と done の下限 |
-| [specs/judgment-memory.md](./specs/judgment-memory.md) | 判断記憶のパイプライン |
-| [templates/](./templates/) | 各 Layer のテンプレ |
-| [decisions/decision-log.md](./decisions/decision-log.md) | 判断日誌（trade journal） |
-| [memory/](./memory/) | 蒸留済み判断記憶 |
+| [01_requirements.md](./01_requirements.md) | 目的・範囲・ユースケース |
+| [02_architecture.md](./02_architecture.md) | 構成・能力カテゴリ・境界 |
+| [03_domain_model.md](./03_domain_model.md) | 用語・概念 |
+| [04_workflows.md](./04_workflows.md) | 運用フロー |
+| [05_data_model.md](./05_data_model.md) | 台帳フォーマット |
+| [tasks/README.md](./tasks/README.md) | 作業メモ |
+
+> `06_error_policy` / `07_test_strategy` / `08_release_runbook` は旧コード運用の名残で、Markdown 台帳では実質未使用（残置）。

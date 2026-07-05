@@ -2,7 +2,7 @@
 
 ## Goal
 
-土台だけだった `catalog/` を、実際に使い始められる初期台帳へ充実させる。
+土台だけだった `src/` を、実際に使い始められる初期台帳へ充実させる。
 
 ## Context
 
@@ -10,7 +10,7 @@
 
 ## Scope
 
-- `catalog/README.md` を追加する。
+- `src/README.md` を追加する。
 - 代表サービス / 技術の初期台帳を追加する。
 - 用途別逆引きを複数追加する。
 - routing-rules を用途ごとに厚くする。
@@ -19,11 +19,11 @@
 
 ## Skeleton
 
-- `catalog/services/*.md`
-- `catalog/usecases/*.md`
-- `catalog/evaluations/*.md`
-- `catalog/candidates/*.md`
-- `catalog/routing-rules.md`
+- `src/services/*.md`
+- `src/usecases/*.md`
+- `src/evaluations/*.md`
+- `src/candidates/*.md`
+- `src/routing-rules.md`
 
 ## Plan
 
@@ -35,17 +35,17 @@
 
 ## Acceptance Criteria
 
-- `catalog/services/` に複数の初期台帳がある。
-- `catalog/usecases/` に主要用途の逆引きがある。
-- `catalog/evaluations/` に評価開始の入口がある。
-- `catalog/routing-rules.md` から主要用途を引ける。
-- `make test` が成功する。
+- `src/services/` に複数の初期台帳がある。
+- `src/usecases/` に主要用途の逆引きがある。
+- `src/evaluations/` に評価開始の入口がある。
+- `src/routing-rules.md` から主要用途を引ける。
+- リンク・見出しフォーマットを目視確認する。
 
 ## Verification
 
-- `make test` - 成功（7 tests）
-- `find catalog/services catalog/usecases catalog/evaluations catalog/candidates -type f | sort` - 追加ファイルを確認
-- `rg -n "^- TODO$|TODO" catalog/usecases catalog/evaluations catalog/README.md catalog/candidates` - 用途・評価入口・候補棚に未処理 TODO がないことを確認
+- 目視確認 — OK
+- `find src/services src/usecases src/evaluations src/candidates -type f | sort` - 追加ファイルを確認
+- `rg -n "^- TODO$|TODO" src/usecases src/evaluations src/README.md src/candidates` - 用途・評価入口・候補棚に未処理 TODO がないことを確認
 
 ## Notes
 

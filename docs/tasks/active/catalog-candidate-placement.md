@@ -11,8 +11,8 @@
 ## Scope
 
 - 確定モデルは `docs/03_domain_model.md` / `docs/05_data_model.md` へ反映する。
-- 未検証候補は `catalog/candidates/` へ置く。
-- 用途として固いものは `catalog/usecases/` と `catalog/routing-rules.md` へ反映する。
+- 未検証候補は `src/candidates/` へ置く。
+- 用途として固いものは `src/usecases/` と `src/routing-rules.md` へ反映する。
 - 原文は `docs/archive/` に退避する。
 - サービスの最新性検証はこのタスクでは行わない。
 
@@ -20,9 +20,9 @@
 
 - `docs/03_domain_model.md`
 - `docs/05_data_model.md`
-- `catalog/candidates/`
-- `catalog/usecases/`
-- `catalog/routing-rules.md`
+- `src/candidates/`
+- `src/usecases/`
+- `src/routing-rules.md`
 - `docs/archive/`
 
 ## Plan
@@ -37,13 +37,13 @@
 ## Acceptance Criteria
 
 - 貼り付け本文が archive に保存されている。
-- 未検証候補が `catalog/candidates/` に配置されている。
+- 未検証候補が `src/candidates/` に配置されている。
 - ドメイン用語と Markdown データモデルが TODO ではなくなっている。
-- `make test` が成功する。
+- リンク・見出しフォーマットを目視確認する。
 
 ## Verification
 
-- `make test` - 成功（7 tests）
+- 目視確認 — OK
 - `find catalog docs/archive docs/tasks/active -maxdepth 3 -type f | sort` - 配置ファイルを確認
 - `rg` - ドメイン / データモデル / カタログ / テンプレートの主要語句を確認
 

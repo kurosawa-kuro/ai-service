@@ -8,10 +8,10 @@
 
 ```text
 候補棚
-  -> catalog/services/*.md へ登録
-  -> catalog/usecases/*.md へ関連付け
-  -> catalog/evaluations/*.md で検証
-  -> catalog/routing-rules.md に判断を反映
+  -> src/services/*.md へ登録
+  -> src/usecases/*.md へ関連付け
+  -> src/evaluations/*.md で検証
+  -> src/routing-rules.md に判断を反映
 ```
 
 ## ファイル

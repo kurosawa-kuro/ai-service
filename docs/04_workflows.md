@@ -1,48 +1,18 @@
 # 04 ワークフロー
 
-## セットアップ
+手書き Markdown 台帳の運用フロー。ビルド / テストはない。
+
+## 作業
+
+1. `src/` を直接編集する。サービス台帳 = `src/services/<name>.md`、用途逆引き = `src/usecases/`、評価ログ = `src/evaluations/`、使い分け = `src/routing-rules.md`。
+2. 迷ったら [tasks/README.md](./tasks/README.md) に一行メモを足す（重い契約は不要）。
+3. 料金 / API / CLI / MCP / ローカル可否は書く時点で確認し、確認日を添える。不明は `未確認` のまま。
+
+## 終了時
 
 ```bash
-make help
-make setup
-```
-
-## 作業開始
-
-```bash
+git diff --check   # 空白崩れの確認
 git status --short
 ```
 
-1. [tasks/README.md](./tasks/README.md) を見る。
-2. `docs/tasks/active/` から今日の task を選ぶ。
-3. task に Scope / Plan / Acceptance Criteria があることを確認する。
-4. 中規模以上なら Skeleton を固定してから実装する。
-
-## ローカル実行
-
-```bash
-make run
-```
-
-または:
-
-```bash
-make dev
-```
-
-## テスト
-
-```bash
-make test
-```
-
-## 作業終了
-
-```bash
-git diff --check
-git status --short
-```
-
-- 実行した検証を task の `Verification` に残す。
-- 未解決事項は task の `Notes` または `backlog/` に移す。
-- 確定した仕様・手順・判断は docs 本体、runbook、ADR へ昇格する。
+確定した内容は task に溜めず、`src/` の台帳へ直接反映する。

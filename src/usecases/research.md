@@ -41,5 +41,5 @@
 
 ## 関連評価ログ
 
-- `catalog/evaluations/2026-06-initial-evaluation-plan.md`
-- `catalog/evaluations/2026-06-research-stack-comparison-plan.md`
+- `src/evaluations/2026-06-initial-evaluation-plan.md`
+- `src/evaluations/2026-06-research-stack-comparison-plan.md`

@@ -42,24 +42,24 @@
 
 | サービス / 技術 | 台帳 | 主な用途 | 次に必要な評価 |
 |---|---|---|---|
-| Codex / Codex CLI | `catalog/services/codex-cli.md` | repo実装、docs同期 | Claude Code との実装比較 |
-| Claude Code | `catalog/services/claude-code.md` | 設計、レビュー、PM判断 | Codex との役割分担 |
-| GitHub Copilot | `catalog/services/github-copilot.md` | IDE補完 | 補完品質と開発速度 |
-| Cursor | `catalog/services/cursor.md` | AI IDE / エージェント実験 | CLI勢との競合確認 |
-| Cline | `catalog/services/cline.md` | VS Code OSSエージェント | 承認フロー、差分品質 |
-| Aider | `catalog/services/aider.md` | Git差分前提CLIペアプロ | Codex との局所修正比較 |
-| OpenCode | `catalog/services/opencode.md` | ターミナル系エージェント | Codex / Aider との差分 |
-| OpenRouter | `catalog/services/openrouter.md` | APIルーター | 料金、ログ、規約、モデル差分 |
-| Ollama | `catalog/services/ollama.md` | ローカルLLM | Apple Silicon 上の速度と品質 |
-| LM Studio | `catalog/services/lm-studio.md` | GUIローカルLLM | Ollama との差分 |
-| NotebookLM | `catalog/services/notebooklm.md` | 手元資料調査 | PDF / 講座資料での精度 |
-| Perplexity | `catalog/services/perplexity.md` | 出典つき調査 | 出典品質と一次情報到達性 |
-| Tavily | `catalog/services/tavily.md` | エージェント向け検索API | APIレスポンス品質 |
-| Exa | `catalog/services/exa.md` | セマンティック検索API | 技術調査 / ニュース検索精度 |
-| Firecrawl | `catalog/services/firecrawl.md` | Web抽出 / クロール | HTML抽出品質、RAG投入しやすさ |
-| Gamma | `catalog/services/gamma.md` | スライド初稿 | 日本語資料の修正容易性 |
-| ElevenLabs | `catalog/services/elevenlabs.md` | ナレーション | 日本語品質、利用権、API |
-| Langfuse | `catalog/services/langfuse.md` | LLM評価 / 監視 | self-host、ログ保持、SDK |
+| Codex / Codex CLI | `src/services/codex-cli.md` | repo実装、docs同期 | Claude Code との実装比較 |
+| Claude Code | `src/services/claude-code.md` | 設計、レビュー、PM判断 | Codex との役割分担 |
+| GitHub Copilot | `src/services/github-copilot.md` | IDE補完 | 補完品質と開発速度 |
+| Cursor | `src/services/cursor.md` | AI IDE / エージェント実験 | CLI勢との競合確認 |
+| Cline | `src/services/cline.md` | VS Code OSSエージェント | 承認フロー、差分品質 |
+| Aider | `src/services/aider.md` | Git差分前提CLIペアプロ | Codex との局所修正比較 |
+| OpenCode | `src/services/opencode.md` | ターミナル系エージェント | Codex / Aider との差分 |
+| OpenRouter | `src/services/openrouter.md` | APIルーター | 料金、ログ、規約、モデル差分 |
+| Ollama | `src/services/ollama.md` | ローカルLLM | Apple Silicon 上の速度と品質 |
+| LM Studio | `src/services/lm-studio.md` | GUIローカルLLM | Ollama との差分 |
+| NotebookLM | `src/services/notebooklm.md` | 手元資料調査 | PDF / 講座資料での精度 |
+| Perplexity | `src/services/perplexity.md` | 出典つき調査 | 出典品質と一次情報到達性 |
+| Tavily | `src/services/tavily.md` | エージェント向け検索API | APIレスポンス品質 |
+| Exa | `src/services/exa.md` | セマンティック検索API | 技術調査 / ニュース検索精度 |
+| Firecrawl | `src/services/firecrawl.md` | Web抽出 / クロール | HTML抽出品質、RAG投入しやすさ |
+| Gamma | `src/services/gamma.md` | スライド初稿 | 日本語資料の修正容易性 |
+| ElevenLabs | `src/services/elevenlabs.md` | ナレーション | 日本語品質、利用権、API |
+| Langfuse | `src/services/langfuse.md` | LLM評価 / 監視 | self-host、ログ保持、SDK |
 
 ## 次の昇格候補
 
@@ -88,6 +88,6 @@
 ## 次の作業
 
 1. 昇格済みサービスに評価ログを 1 件ずつ作る。
-2. 次の昇格候補から 5 件を `catalog/services/*.md` に追加する。
-3. `catalog/usecases/*.md` と `catalog/routing-rules.md` に関連付ける。
+2. 次の昇格候補から 5 件を `src/services/*.md` に追加する。
+3. `src/usecases/*.md` と `src/routing-rules.md` に関連付ける。
 4. 月次レビューで A / B / C と観察ポイントを更新する。

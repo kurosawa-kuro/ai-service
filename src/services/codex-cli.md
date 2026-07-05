@@ -64,7 +64,7 @@
 
 - タスク: Phase 1 catalog CLI 実装
 - 入力: `docs/01_requirements.md`、`docs/02_architecture.md`
-- 結果: `src/ai_catalog`、`tests`、`Makefile`、`catalog/` 初期構成を生成
+- 結果: `src/ai_catalog`、`tests`、`Makefile`、`src/` 初期構成を生成
 - 理由: Markdown台帳を実際に書き足せる状態にできた
 - 再利用判断: repo 内の小〜中規模実装では第一候補
 

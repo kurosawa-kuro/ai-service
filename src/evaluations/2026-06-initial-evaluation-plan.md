@@ -46,5 +46,5 @@
 ## 完了条件
 
 - 各対象に最低 1 件の評価ログを作る。
-- `catalog/services/*.md` の検証ログへリンクする。
-- `catalog/usecases/*.md` と `catalog/routing-rules.md` を更新する。
+- `src/services/*.md` の検証ログへリンクする。
+- `src/usecases/*.md` と `src/routing-rules.md` を更新する。

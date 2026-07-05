@@ -44,5 +44,5 @@
 
 ## 関連評価ログ
 
-- `catalog/evaluations/README.md`
-- `catalog/evaluations/2026-06-coding-agent-comparison-plan.md`
+- `src/evaluations/README.md`
+- `src/evaluations/2026-06-coding-agent-comparison-plan.md`

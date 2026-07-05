@@ -2,10 +2,7 @@
 
 ## 品質ゲート
 
-```bash
-make test
-git diff --check
-```
+Markdown 台帳につき自動テストはない。`git diff --check`（空白崩れ）と、リンク・見出しフォーマットの目視で確認する。
 
 ## テスト範囲
 
