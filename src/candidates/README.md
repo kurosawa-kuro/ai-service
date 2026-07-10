@@ -11,7 +11,7 @@
   -> src/services/*.md へ登録
   -> src/usecases/*.md へ関連付け
   -> src/evaluations/*.md で検証
-  -> src/使い分けルール.md に判断を反映
+  -> src/usecases/使い分けルール.md に判断を反映
 ```
 
 ## ファイル

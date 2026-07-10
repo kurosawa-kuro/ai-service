@@ -18,7 +18,7 @@ src/
   ├── usecases/
   ├── evaluations/
   ├── candidates/
-  └── 使い分けルール.md
+  └── usecases/使い分けルール.md
 ```
 
 DB 化は構造が固まってから検討する。
