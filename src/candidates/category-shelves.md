@@ -11,11 +11,11 @@
 | Gemini | Google系チャットAI / マルチモーダル |
 | DeepSeek | 低コスト、OSS / API系候補 |
 | Qwen | 中国系モデル、OSS / ローカル検証候補 |
-| Grok / xAI | X連携、リアルタイム寄り |
+| Grok / xAI | X連携、リアルタイム寄り。Grok 4.5（2026-07-08）は出力 $6 の低コスト大量実装候補（未検証） |
 | Mistral / Le Chat / Mistral API | 欧州系、商用API、オープンウェイト |
 | Meta Llama | ローカル / OSS系の基準モデル |
 | Cohere Command系 | RAG、企業向け、長文・検索拡張 |
-| z.ai GLM | 中国系オープンモデル |
+| z.ai GLM | 中国系オープンモデル。GLM-5.2（2026-06-16）は 1M コンテキスト・MIT・エージェント基盤候補。ホスト環境（Coding Plan / API / OpenRouter）前提（未検証） |
 | Moonshot Kimi | 長文・中国系モデル |
 | MiniMax | テキスト・音声・動画系も含む中国系AI |
 | Tencent Hunyuan | 中国大手モデル |
@@ -181,6 +181,7 @@
 | Whisper / Whisper API | 音声文字起こし |
 | Cartesia | 低遅延TTS / 音声エージェント |
 | Hume AI | 感情・音声AI |
+| GPT-Live | OpenAI の full-duplex 音声モデル（2026-07-08 発表）。対話担当と推論担当を分離。API 提供予定（未検証） |
 
 ## 12_プレゼン・資料
 
@@ -229,6 +230,9 @@
 | 名称 | 位置づけ |
 |---|---|
 | Manus系AI | 自律タスク実行AI |
+| ChatGPT Work | OpenAI の職場向け汎用エージェント（2026-07-09 発表）。Gmail / Drive / Slack / CRM / ローカルファイル横断。デスクトップ中心（未検証） |
+| Gemini Spark | Google のデスクトップエージェント（2026-06-30 macOS 搭載）。Workspace 連携・条件監視・カスタム MCP。米国 AI Ultra ベータ、日本未展開（未検証） |
+| Claude Cowork | Anthropic の職場エージェント。2026-07 上旬に Web / モバイル拡張、Max プラン先行（未検証） |
 | OpenAI Operator / Computer Use系 | ブラウザ・PC操作 |
 | Anthropic Computer Use | 画面操作型エージェント |
 | Browser-use | OSSブラウザ操作エージェント |
@@ -259,6 +263,7 @@
 | Lasso Security | LLMアプリセキュリティ |
 | Aporia | AIガードレール |
 | Humanloop | プロンプト管理・評価 |
+| Leanstral 1.5 | Mistral の Lean 4 形式検証モデル（2026-07-02、Apache 2.0）。定理証明・コード特性の数学的証明・未知バグ発見（未検証） |
 
 ## ハーネス / 標準技術
 
@@ -281,4 +286,5 @@
 | Mastra | TypeScript系エージェントフレームワーク |
 | Composio | エージェント用ツール統合 |
 | Zapier MCP / Zapier AI Actions | SaaS操作自動化 |
+| Mistral Studio（Prompt / Skill 管理） | Prompt / Skill をバージョン・所有者・実行履歴・ロールバックつきの本番資産として管理（2026-07-09）。Project as Code の参考思想。ただし owner を縛る官僚機構化はしない（未検証） |
 | Computer Use | 画面操作型エージェント技術 |
