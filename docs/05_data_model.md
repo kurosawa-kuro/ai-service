@@ -18,7 +18,7 @@ src/
   ├── usecases/
   ├── evaluations/
   ├── candidates/
-  └── routing-rules.md
+  └── 使い分けルール.md
 ```
 
 DB 化は構造が固まってから検討する。

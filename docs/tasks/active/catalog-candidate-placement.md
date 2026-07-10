@@ -12,7 +12,7 @@
 
 - 確定モデルは `docs/03_domain_model.md` / `docs/05_data_model.md` へ反映する。
 - 未検証候補は `src/candidates/` へ置く。
-- 用途として固いものは `src/usecases/` と `src/routing-rules.md` へ反映する。
+- 用途として固いものは `src/usecases/` と `src/使い分けルール.md` へ反映する。
 - 原文は `docs/archive/` に退避する。
 - サービスの最新性検証はこのタスクでは行わない。
 
@@ -22,7 +22,7 @@
 - `docs/05_data_model.md`
 - `src/candidates/`
 - `src/usecases/`
-- `src/routing-rules.md`
+- `src/使い分けルール.md`
 - `docs/archive/`
 
 ## Plan

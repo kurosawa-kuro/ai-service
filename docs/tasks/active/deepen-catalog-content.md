@@ -13,8 +13,8 @@
 - `services/README.md` に横比較を追加する。
 - 次候補を複数 `services/` へ昇格する。
 - `evaluations/` に比較計画を追加する。
-- `routing-rules.md` と `usecases/` を昇格済みサービスに合わせて更新する。
-- `candidates/priority-seeds.md` の昇格状況を更新する。
+- `使い分けルール.md` と `usecases/` を昇格済みサービスに合わせて更新する。
+- `candidates/優先候補.md` の昇格状況を更新する。
 
 ## Skeleton
 
@@ -22,7 +22,7 @@
 - `src/usecases/`
 - `src/evaluations/`
 - `src/candidates/`
-- `src/routing-rules.md`
+- `src/使い分けルール.md`
 
 ## Plan
 
@@ -36,7 +36,7 @@
 
 - `src/services/` の登録数が増えている。
 - `src/evaluations/` に比較計画が複数ある。
-- `routing-rules.md` が新規台帳と整合している。
+- `使い分けルール.md` が新規台帳と整合している。
 - リンク・見出しフォーマットを目視確認する。
 
 ## Verification

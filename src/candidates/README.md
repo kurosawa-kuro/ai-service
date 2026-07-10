@@ -11,15 +11,15 @@
   -> src/services/*.md へ登録
   -> src/usecases/*.md へ関連付け
   -> src/evaluations/*.md で検証
-  -> src/routing-rules.md に判断を反映
+  -> src/使い分けルール.md に判断を反映
 ```
 
 ## ファイル
 
 | ファイル | 用途 |
 |---|---|
-| `category-shelves.md` | 能力カテゴリ別の候補一覧 |
-| `priority-seeds.md` | 次に台帳化する優先候補 |
+| `カテゴリ別候補棚.md` | 能力カテゴリ別の候補一覧 |
+| `優先候補.md` | 次に台帳化する優先候補 |
 
 ## 候補の見方
 
@@ -45,7 +45,7 @@
 
 ## 初期バッチ
 
-まず `priority-seeds.md` のうち、次の 11 件を `services/` に昇格済み。
+まず `優先候補.md` のうち、次の 11 件を `services/` に昇格済み。
 
 - Codex / Codex CLI
 - Claude Code

@@ -1,4 +1,4 @@
-# pm-automation
+# PM自動化（pm-automation）
 
 ## 第一候補
 
@@ -39,4 +39,4 @@
 
 ## 関連評価ログ
 
-- `src/evaluations/2026-06-initial-evaluation-plan.md`
+- `src/evaluations/2026-06-初期評価計画.md`

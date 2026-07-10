@@ -23,7 +23,7 @@
 - `src/usecases/*.md`
 - `src/evaluations/*.md`
 - `src/candidates/*.md`
-- `src/routing-rules.md`
+- `src/使い分けルール.md`
 
 ## Plan
 
@@ -38,7 +38,7 @@
 - `src/services/` に複数の初期台帳がある。
 - `src/usecases/` に主要用途の逆引きがある。
 - `src/evaluations/` に評価開始の入口がある。
-- `src/routing-rules.md` から主要用途を引ける。
+- `src/使い分けルール.md` から主要用途を引ける。
 - リンク・見出しフォーマットを目視確認する。
 
 ## Verification

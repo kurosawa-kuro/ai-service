@@ -9,8 +9,8 @@
   - `src/usecases/` 用途からの逆引き
   - `src/evaluations/` 実タスクの評価ログ
   - `src/candidates/` 未検証候補
-  - `src/routing-rules.md` 使い分けの正本
-  - `src/現在の契約.md` 今の契約 ／ `src/将来方針.md` 契約の目標形（疎結合） ／ `src/services/coding-plans.md` プラン比較
+  - `src/使い分けルール.md` 使い分けの正本
+  - `src/現在の契約.md` 今の契約 ／ `src/将来方針.md` 契約の目標形（疎結合） ／ `src/services/コーディングプラン比較.md` プラン比較
 - `docs/` — 補助メモ（軽い参照。`docs/tasks/` は作業メモ）
 - `env/` — `config.yaml`（非機密）／ `secret.yaml`（ローカル秘密・コミット禁止）
 

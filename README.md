@@ -20,7 +20,7 @@ src/
   ├── services/        # サービス単位の記録
   ├── usecases/        # 用途単位の逆引き
   ├── evaluations/     # 実タスクの評価ログ
-  └── routing-rules.md # 使い分け判断の正本
+  └── 使い分けルール.md # 使い分け判断の正本
 ```
 
 将来的には、構造が固まってから Supabase 化、検索 UI / CLI、自動ルーティングへ進める。

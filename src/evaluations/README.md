@@ -13,7 +13,7 @@ YYYY-MM-<topic>.md
 例:
 
 - `2026-06-codex-vs-claude-code-refactor.md`
-- `2026-06-perplexity-notebooklm-research.md`
+- `2026-06-perplexity-notebooklm-調査.md`
 - `2026-06-ollama-local-secret-test.md`
 
 ## 書くこと
@@ -52,8 +52,8 @@ YYYY-MM-<topic>.md
 
 | ファイル | 用途 |
 |---|---|
-| `2026-06-initial-evaluation-plan.md` | 初期評価全体の順番 |
-| `2026-06-coding-agent-comparison-plan.md` | コーディングエージェント比較 |
-| `2026-06-research-stack-comparison-plan.md` | 検索・調査スタック比較 |
-| `2026-06-local-llm-comparison-plan.md` | ローカルLLM比較 |
-| `monthly-review-template.md` | 月次レビュー雛形 |
+| `2026-06-初期評価計画.md` | 初期評価全体の順番 |
+| `2026-06-コーディングエージェント比較計画.md` | コーディングエージェント比較 |
+| `2026-06-調査スタック比較計画.md` | 検索・調査スタック比較 |
+| `2026-06-ローカルLLM比較計画.md` | ローカルLLM比較 |
+| `月次レビューテンプレート.md` | 月次レビュー雛形 |
