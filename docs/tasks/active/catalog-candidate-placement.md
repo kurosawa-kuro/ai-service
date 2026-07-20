@@ -11,8 +11,8 @@
 ## Scope
 
 - 確定モデルは `docs/03_domain_model.md` / `docs/05_data_model.md` へ反映する。
-- 未検証候補は `src/candidates/` へ置く。
-- 用途として固いものは `src/usecases/` と `src/usecases/使い分けルール.md` へ反映する。
+- 未検証候補は `src/23_候補/` へ置く。
+- 用途として固いものは `src/22_用途/` と `src/12_使い分けルール.md` へ反映する。
 - 原文は `docs/archive/` に退避する。
 - サービスの最新性検証はこのタスクでは行わない。
 
@@ -20,9 +20,9 @@
 
 - `docs/03_domain_model.md`
 - `docs/05_data_model.md`
-- `src/candidates/`
-- `src/usecases/`
-- `src/usecases/使い分けルール.md`
+- `src/23_候補/`
+- `src/22_用途/`
+- `src/12_使い分けルール.md`
 - `docs/archive/`
 
 ## Plan
@@ -37,7 +37,7 @@
 ## Acceptance Criteria
 
 - 貼り付け本文が archive に保存されている。
-- 未検証候補が `src/candidates/` に配置されている。
+- 未検証候補が `src/23_候補/` に配置されている。
 - ドメイン用語と Markdown データモデルが TODO ではなくなっている。
 - リンク・見出しフォーマットを目視確認する。
 

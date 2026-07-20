@@ -74,7 +74,7 @@ API/CLI/ハーネスに接続できるか？
 最初はこれで十分です。
 
 /ai-catalog
-  ├── services/
+  ├── 21_サービス/
   │   ├── chatgpt.md
   │   ├── claude.md
   │   ├── deepseek.md
@@ -84,7 +84,7 @@ API/CLI/ハーネスに接続できるか？
   │   ├── gemini.md
   │   └── perplexity.md
   │
-  ├── usecases/
+  ├── 22_用途/
   │   ├── thinking.md
   │   ├── coding.md
   │   ├── trading.md
@@ -92,7 +92,7 @@ API/CLI/ハーネスに接続できるか？
   │   ├── consulting-pm.md
   │   └── research.md
   │
-  ├── evaluations/
+  ├── 30_評価/
   │   ├── 2026-06-chatgpt-vs-claude-coding.md
   │   ├── 2026-06-deepseek-lowcost-test.md
   │   └── 2026-06-perplexity-research-test.md

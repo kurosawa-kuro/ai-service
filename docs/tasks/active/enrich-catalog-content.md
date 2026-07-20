@@ -19,11 +19,11 @@
 
 ## Skeleton
 
-- `src/services/*.md`
-- `src/usecases/*.md`
-- `src/evaluations/*.md`
-- `src/candidates/*.md`
-- `src/usecases/使い分けルール.md`
+- `src/21_サービス/*.md`
+- `src/22_用途/*.md`
+- `src/30_評価/*.md`
+- `src/23_候補/*.md`
+- `src/12_使い分けルール.md`
 
 ## Plan
 
@@ -35,10 +35,10 @@
 
 ## Acceptance Criteria
 
-- `src/services/` に複数の初期台帳がある。
-- `src/usecases/` に主要用途の逆引きがある。
-- `src/evaluations/` に評価開始の入口がある。
-- `src/usecases/使い分けルール.md` から主要用途を引ける。
+- `src/21_サービス/` に複数の初期台帳がある。
+- `src/22_用途/` に主要用途の逆引きがある。
+- `src/30_評価/` に評価開始の入口がある。
+- `src/12_使い分けルール.md` から主要用途を引ける。
 - リンク・見出しフォーマットを目視確認する。
 
 ## Verification
