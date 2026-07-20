@@ -11,7 +11,7 @@
 | [`../src/evaluations/`](../src/evaluations/) | 実タスクの評価ログ |
 | [`../src/candidates/`](../src/candidates/) | 未検証候補の棚 |
 | [`../src/usecases/使い分けルール.md`](../src/usecases/使い分けルール.md) | 使い分け判断の正本 |
-| [`../src/contracts/現在の契約.md`](../src/contracts/現在の契約.md) | 今の契約 ／ [`../src/services/コーディングプラン比較.md`](../src/services/コーディングプラン比較.md) プラン比較 |
+| [`../src/contracts/01_現在の契約.md`](../src/contracts/01_現在の契約.md) | 今の契約 ／ [`../src/services/コーディングプラン比較.md`](../src/services/コーディングプラン比較.md) プラン比較 |
 
 ## 補助ドキュメント（軽い参照）
 

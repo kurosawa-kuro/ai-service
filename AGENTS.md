@@ -3,7 +3,7 @@
 AI エージェント共通の作業ガイド（Codex / 他）。Claude Code 向けは `CLAUDE.md`。
 
 黒澤さん個人の **AI サービス / 技術カタログ**。実ソースは `src/`（手書き Markdown 台帳）:
-`src/services/`（サービス台帳）／ `src/usecases/`（用途逆引き）／ `src/evaluations/`（評価ログ）／ `src/candidates/`（候補）／ `src/usecases/使い分けルール.md`（使い分け）／ `src/contracts/現在の契約.md`。
+`src/services/`（サービス台帳）／ `src/usecases/`（用途逆引き）／ `src/evaluations/`（評価ログ）／ `src/candidates/`（候補）／ `src/usecases/使い分けルール.md`（使い分け）／ `src/contracts/01_現在の契約.md`。
 
 ## 進め方
 
