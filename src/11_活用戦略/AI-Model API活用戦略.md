@@ -9,10 +9,29 @@
 
 ## 位置づけ
 
-バーベル戦略は「高額1・標準1・その他API」と定めるが、その **API レグが機能するかは実行基盤に依存する**。
-基盤がなければ「API で摘み食い」は絵に描いた餅になり、結局サブスクを増やす方向へ逆戻りする。
+### ⚠️ API レグは「摘み食い」ではなく主力（2026-07-20 訂正）
 
-本戦略の主張は次の一点。
+バーベル戦略の原文は第3レグを「その他は API 従量課金で**摘み食い**する」と表現しているが、
+**運用実態はこれと異なる。**
+
+> **DeepSeek が主な LLM 処理のメインエンジン**（owner 申告・2026-07-20）
+
+つまり API レグは補助ではなく、**日常の処理量を最も多く担っている脚**である。
+高額サブスク（Claude Max / ChatGPT Pro）はハーネス用途に限定され、
+一般的な LLM 処理はサブスク枠ではなく API 従量側で回っている。
+
+この事実は次の3点に影響する。
+
+1. **コスト構造** — 月額サブスク $310 の外側に、DeepSeek の従量コストが常時発生している。
+   契約判断はサブスク単体ではなく「サブスク＋主力 API 従量」の合計で見る必要がある。
+2. **サブスク降格の余地** — 主力処理が API 側にあるなら、サブスク枠は想定より余っている可能性が高い。
+   8/7 の降格判断にとって追い風の材料。
+3. **台帳の欠落の重大性** — 最も使っているモデルの台帳が存在しない状態だった（下記）。
+
+### 基盤依存
+
+API レグが機能するかは実行基盤に依存する。基盤がなければ API 主力運用は成立せず、
+結局サブスクを増やす方向へ逆戻りする。
 
 > **API レグは自作基盤で既に稼働しており、摩擦は低い。**
 > ゆえに、サブスク契約を増やす前に「API で足りないか」を先に問える。
@@ -90,13 +109,21 @@ workhorse
 つまり「最高峰モデルへのアクセスは維持しつつ、常用はしない」という戦略が、
 gate として強制される設計になっている。
 
-### 現在の状態（重要）
+### 現在の状態（重要・2026-07-20 実地確認）
 
-**fake/paid execution は release-blocked**。
-paid 再開は release runbook §1 の全 stop condition、drift ownership、fresh L1〜L3 をすべて満たす場合のみ。
+**この軸はまだ一度も実行されていない。**
 
-→ **この軸は現時点で API 予算を消費していない**。コスト試算に含めないこと。
-再開時は ai-gateway のログで実績を確認する。
+- `fake/paid execution` とも **release-blocked**（`docs/specs/capability-boundary.md` が `make run` / `make retry` を deny。owner approval でも迂回不可と明記）
+- **dry-run すら release-blocked**（「無課金だから安全」という理由では実行しない方針）
+- 実行履歴の格納先 **`data/jobs.sqlite` が存在しない** ＝ 実運用の実行が0件
+- コード自体は実在し `make unit` は 144 tests OK。`model_runs` / `cost_summaries` スキーマも実装済み
+
+→ **現時点で API 予算を消費していない**。コスト試算に含めないこと。
+
+**設計と実装の乖離（リポジトリ自己申告の DRIFT）**:
+`docs/05_data_model.md` / FR-015 が規定する CostLedger・予算予約（atomic compare-and-reserve）は**未実装**。
+`enforce_budget_gate()` は `on_exceed=warn` 設定だと hard ceiling 超過を継続でき **fail-open** しうる（DRIFT-006 / 010 / 012）。
+paid 再開前にここを確認すること。
 
 ---
 
@@ -113,12 +140,24 @@ paid 再開は release runbook §1 の全 stop condition、drift ownership、fre
 **サブスクが要るのはハーネスを持つプロバイダだけ**（Anthropic / OpenAI）。
 それ以外は本戦略の①②で足りる。
 
-### コスト実測
+### コスト実測（計測範囲の切り分け・2026-07-20 訂正）
 
-判断ルール3（従量実績 vs プラン差額の損益分岐）は推測せず、**ai-gateway のログで確定させる**。
+**ai-gateway が測れるのは API キー経由の分だけ。** サブスク枠は経路が違うため測れない。
+
+| 計測対象 | ai-gateway | 正しい取得元 |
+|---|---|---|
+| ① Open WebUI 経由の API 従量 | ✅ 可 | `ai_runs` テーブル |
+| ② reasoning-orchestrator のコスト | ✅ 可（未実行） | `model_runs` / `cost_summaries` |
+| **Claude Code のサブスク枠消費** | ❌ 不可 | `claude.ai/settings/usage` ／ `/usage` ／ ccusage |
+| **Codex の quota 消費** | ❌ 不可 | `chatgpt.com/codex/cloud/settings/analytics` |
+| **Pro の Fable 5 従量クレジット** | ❌ 不可 | Claude サブスク内課金 |
+
+Claude Code / Codex はサブスク認証で provider へ直接接続し gateway を通らないため、`ai_runs` に行が立たない。
+単位も非互換（枠＝prompt数/5時間窓・週次上限の離散カウンタ ／ gateway＝トークン×単価の連続量）。
 
 ```text
-例: Fable 5 の月間従量実績 < $80  → Pro $20 ＋ 従量が Max 5x $100 より安い
+損益分岐の例: Fable 5 の月間従量実績 < $80 → Pro $20 ＋ 従量が Max 5x $100 より安い
+             ただしこの数字は Claude 側の使用量画面で取る（ai-gateway では取れない）
 ```
 
 ## 破綻条件
