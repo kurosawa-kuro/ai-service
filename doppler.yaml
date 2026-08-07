@@ -11,9 +11,9 @@ setup:
 #   private-ops/docs/repos/env/doppler-apps/specs/仕様書.md（§1 命名規則 / §2 レジストリ / §6 消費者台帳）
 #
 # 2026-08-07 の棚卸しで、このファイルには 2026-06-12 時点の 25 鍵スナップショット
-# （Turso 時代・hermes-n8n 前提）がコメントとして残っており、退役済みの
-# AUTH_N8N_OWNER_* / NOTIFY_DISCORD_HERMES_WEBHOOK_URL / INFRA_NGROK_AUTH_TOKEN /
-# INFRA_DOPPLER_AUTH_TOKEN が「まだ参照されている」ように見える唯一の grep ヒット源に
-# なっていた（実際は実行コード 0 件）。写しは作らない。
+# （Turso 時代・hermes-n8n 前提）がコメントとして残っていた。退役済みの鍵 4 件について
+# 「まだ参照されている」ように見える唯一の grep ヒット源がこの写しで、実行コードからの
+# 参照は 0 件だった（該当鍵は同日に Doppler から削除済み）。
+# 教訓: 写しは鍵名の grep を汚して棚卸しを狂わせる。ここに鍵名を列挙し直さないこと。
 #
 # 初期化: doppler setup --project apps --config dev --no-interactive
