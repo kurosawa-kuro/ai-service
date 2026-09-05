@@ -132,6 +132,6 @@ Alibaba Cloud 全体の各国規制動向も未確認。
 
 ## 関連
 
-- 比較対象: [cn-deepseek.md](cn-deepseek.md)
+- 比較対象: [05_cn-deepseek.md](05_cn-deepseek.md)
 - 秘匿判断: [22_用途/ローカル秘匿.md](../22_用途/ローカル秘匿.md)
 - 使い分け正本: [12_使い分けルール.md](../12_使い分けルール.md)

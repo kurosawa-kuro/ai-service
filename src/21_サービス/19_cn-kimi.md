@@ -71,8 +71,8 @@ USD / 1M トークン。
 > オプトアウト条項: "Customer who requires restrictions on the use of Customer Content for training...
 > may contact Moonshot AI to discuss available enterprise arrangements or separate written agreements."
 
-**→ 業務コード・顧客データ・秘匿情報を渡さない。** 該当処理は [cn-glm.md](cn-glm.md) か
-[cn-qwen.md](cn-qwen.md)、またはローカル（Ollama）へ回す。
+**→ 業務コード・顧客データ・秘匿情報を渡さない。** 該当処理は [09_cn-glm.md](09_cn-glm.md) か
+[08_cn-qwen.md](08_cn-qwen.md)、またはローカル（Ollama）へ回す。
 
 出典: [Kimi ToS](https://platform.kimi.ai/docs/agreement/modeluse) / [Privacy](https://platform.kimi.ai/docs/agreement/userprivacy)
 
@@ -140,5 +140,5 @@ K2.7 Code は自社ベンチ中心で、**自社表でも 6 項目中 5 項目�
 
 ## 関連
 
-- 規約が強い代替: [cn-glm.md](cn-glm.md) / [cn-qwen.md](cn-qwen.md)
-- コスト優先の代替: [cn-deepseek.md](cn-deepseek.md)
+- 規約が強い代替: [09_cn-glm.md](09_cn-glm.md) / [08_cn-qwen.md](08_cn-qwen.md)
+- コスト優先の代替: [05_cn-deepseek.md](05_cn-deepseek.md)

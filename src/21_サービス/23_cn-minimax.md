@@ -130,4 +130,4 @@ MiniMax は比較対象の数値を公式 TB2.1 リーダーボードから引�
 ## 関連
 
 - 講座用途: [22_用途/講座コンテンツ.md](../22_用途/講座コンテンツ.md)
-- テキストの代替: [cn-deepseek.md](cn-deepseek.md) / [cn-glm.md](cn-glm.md)
+- テキストの代替: [05_cn-deepseek.md](05_cn-deepseek.md) / [09_cn-glm.md](09_cn-glm.md)

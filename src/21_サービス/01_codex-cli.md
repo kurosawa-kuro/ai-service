@@ -17,7 +17,7 @@
 | IDE | 可。Codex IDE 拡張。CLI・デスクトップ・クラウドは別の実行面 |
 | MCP | クライアント対応（stdio / Streamable HTTP、OAuth）。`codex mcp-server` によるサーバー化は**非推奨**、新規連携は App Server。[MCP](https://learn.chatgpt.com/docs/extend/mcp) / [サーバー移行案内](https://learn.chatgpt.com/docs/mcp-server) |
 | AGENTS.md / rules / hooks 対応 | `AGENTS.md`、実行ルール、skills / plugins、hooks。hooks は `.codex/hooks.json` または `config.toml`。[Hooks](https://learn.chatgpt.com/docs/hooks) |
-| ローカル可否 | ファイル編集・コマンドはローカル実行可。OpenAI モデルの推論はクラウド。Ollama / LM Studio のローカルプロバイダ設定もあるが、同等の能力・完全オフライン運用は未検証。[設定](https://learn.chatgpt.com/docs/config-file/config-advanced) |
+| ローカル可否 | ファイル編集・コマンドはローカル実行可。OpenAI モデルの推論はクラウド。`--oss` で Ollama / LM Studio を選ぶローカル推論にも対応するが、同等の能力・完全オフライン運用は未検証。[設定](https://learn.chatgpt.com/docs/config-file/config-advanced) |
 | モバイル / Android | ChatGPT モバイルの Remote から接続中の Mac / Windows PC の作業を開始・承認・確認できる。端末を起動・接続しておく必要あり。Android 個別の配布状態は未確認。[Remote](https://learn.chatgpt.com/docs/remote) |
 
 基本表の料金 / API / CLI / IDE / MCP / 指示ファイル / ローカル可否はすべて 2026-09-06 確認。

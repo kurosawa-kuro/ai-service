@@ -142,6 +142,6 @@ ZCode の Optimization Program は**既定オフ**のオプトイン式、設定
 
 ## 関連
 
-- コスト優先の比較対象: [cn-deepseek.md](cn-deepseek.md)
-- 業務適格性の比較対象: [cn-qwen.md](cn-qwen.md)
+- コスト優先の比較対象: [05_cn-deepseek.md](05_cn-deepseek.md)
+- 業務適格性の比較対象: [08_cn-qwen.md](08_cn-qwen.md)
 - 秘匿判断: [22_用途/ローカル秘匿.md](../22_用途/ローカル秘匿.md)
