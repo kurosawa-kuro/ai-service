@@ -45,12 +45,14 @@
 
 > **モバイル / Android** 列は非 iOS（Android 主）視点の判断軸。値は best-effort（✓=対応 / △=web・別アプリ経由 / ✗=PC 専用 / —=API / 要確認）。アプリ有無は変わるので確定は要確認。
 
+2026-09-06: Codex / Claude Code / GitHub Copilot / Cursor の4行を公式情報で更新。出典・条件・未検証事項は各サービス台帳を参照。その他の行は今回未再確認。
+
 | サービス / 技術 | 主カテゴリ | 主用途 | ハーネス適性 | 現評価 | モバイル | Android | 次に見ること |
 |---|---|---|---|---|---|---|---|
-| Codex / Codex CLI | 04 / 05 | repo実装、docs同期 | 高 | A | △ ChatGPTアプリ | ✓ ChatGPTアプリ | Claude Code との役割分担 |
-| Claude Code | 04 / 05 | 設計、レビュー、PM判断 | 高 | A候補 | △ Claudeアプリ | ✓ Claudeアプリ | 実装速度、制限、Codex比較 |
-| GitHub Copilot | 04 / 05 | IDE補完 | 中〜高 | B候補 | ✓ GitHub Mobile | ✓ | Agent / Review / MCP 実用性 |
-| Cursor | 04 / 05 | AI IDE、複数ファイル編集 | 中〜高 | A候補 | △ モバイル化加速中 | 要確認 | Git 代替化・モバイル対応の実力、CLI 勢との役割分担 |
+| [Codex / Codex CLI](codex-cli.md) | 04 / 05 | repo実装、docs同期、CLI / SDK | 高 | A | △ ChatGPT Remote（接続PC必須） | Remote の個別配布は未確認 | Astra / Terra / Luna の費用差、Work との共有枠 |
+| [Claude Code](claude-code.md) | 04 / 05 | 設計、レビュー、実装、CLI / SDK | 高 | A候補 | △ Remote Control（有料・接続PC必須） | △ Claudeアプリ / Web経由 | Pro の完了率、Fable 5.1 の従量費用 |
+| [GitHub Copilot](github-copilot.md) | 04 / 05 | IDE補完、CLI / SDK、Issue→PR | 高候補 | B候補 | ✓ GitHub Mobile | ✓ | 解約済み。CLI / cloud agent の再評価、AI credits |
+| [Cursor](cursor.md) | 04 / 05 | IDE、CLI / SDK、遠隔実装 | 高候補 | A候補 | ✓ iOSアプリ（有料対象プラン） | アプリは計画中 / Web別経路 | 2プールの費用、Origin初期beta、self-hosted |
 | Cline | 04 / 05 | VS Code OSSエージェント | 中〜高候補 | 未評価 | ✗ PC専用 | ✗ | ローカル承認フロー、差分品質 |
 | Aider | 04 / 05 | Git差分前提のCLIペアプロ | 高候補 | 未評価 | ✗ CLI | ✗ | 既存repoでの編集安定性 |
 | OpenCode | 04 / 05 | ターミナル派エージェント | 中〜高候補 | 未評価 | ✗ CLI | ✗ | Codex / Aider との差分 |
